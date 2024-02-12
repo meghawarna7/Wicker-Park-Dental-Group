@@ -1,0 +1,234 @@
+.nav-link span{
+    color: black;
+
+}
+
+/* Hover color for navbar links */
+.nav-link span:hover {
+    color: rgb(109, 240, 16); /* Adjust the color as needed */
+}
+
+/* Active link color for navbar */
+.nav-link.active {
+    color: rgb(188, 239, 18); /* Adjust the color as needed */
+}
+
+.nav- a{
+    color: black;
+}
+.d-md-none{
+    color: #f8f9fa;
+    border: 1px solid black;
+}
+
+.submenu {
+    display: none; /* Hide the submenu by default */
+    position: absolute; /* Position it relative to the parent */
+    background-color: #fff; /* Set background color */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Add border for clarity */
+}
+
+.nav-item:hover .submenu {
+    display: block; /* Show the submenu when the parent is hovered */
+}
+.submenu ul{
+    margin-bottom: 5px;
+    list-style-type: none; 
+}
+/* Style for submenu columns */
+.submenu li {
+    width: 25%; /* Set to 25% for four columns */
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Style for submenu links */
+.submenu li a {
+    color: black; /* Font color */
+    text-decoration: none;
+}
+
+/* Hover style for submenu links */
+.submenu li a:hover {
+    color: blue; /* Hover font color */
+}
+
+.submenu ul li{
+    margin-bottom: 10px; 
+}
+
+
+
+
+.hero-section {
+    background-image: url('Assets/services/banner\ image.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust height for desktop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content {
+margin-left: 10%;
+margin-top: 70%;
+}
+ .hero-content h1 {
+        padding-top: 70%;
+       color: #CCD356;
+       font-weight: 500;
+        width: 150%;
+        height: 50%;
+        margin-bottom: 10px;
+        padding-bottom: 40px; /* Adjust margin as needed */
+    }
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px; /* Adjust height for mobile */
+    }
+   
+}
+
+.container2 {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 40px auto; /* Center the container horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.container2 h2 {
+    margin-bottom: 40px;
+    color: #B9C230; /* Adjust header color */
+}
+
+p {
+    margin-bottom: 40px;
+    color: #666; /* Adjust paragraph color */
+    margin-top: 40px;
+}
+
+.container3 {
+    margin-top: 100px;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 40px auto; /* Center the container horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.container3 h2 {
+    margin-bottom: 40px;
+    color: #B9C230; /* Adjust header color */
+}
+
+p {
+    margin-bottom: 40px;
+    color: #666; /* Adjust paragraph color */
+    margin-top: 40px;
+}
+.container4 {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 40px auto; /* Center the container horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.container4 h2 {
+    margin-bottom: 40px;
+    color: #B9C230; /* Adjust header color */
+}
+
+p {
+    margin-bottom: 40px;
+    color: #666; /* Adjust paragraph color */
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.topic {
+    text-align: center;
+    max-width: 600px; /* Set a maximum width for the topic content */
+    width: 80%; /* Set a width to make sure content doesn't stretch too wide on larger screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        height: auto; /* Change the container height to auto for smaller screens */
+    }
+    .topic {
+        width: 90%; /* Adjust the width of the topic content for smaller screens */
+    }
+}
+
+.card {
+        margin-top: 0%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        background: #f8f9fa;
+    }
+    .card img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin: 10px;
+        margin-right: 20px;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-title {
+        font-weight: bold;
+    }
+    .stars {
+        color: #ffd700; /* Gold */
+    }   
+    #About{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .card6 {
+        margin: 40px;
+        margin-bottom: 20px; /* Add some space between each card */
+    }
+    
+    .card6 img {
+        max-width: 100%; /* Ensure images don't exceed the width of their container */
+    }
+    
+    .card-text6 {
+        color: #333; /* Set color for description text */
+        font-size: 16px; /* Adjust font size as needed */
+        margin-top: 10px; /* Add some space between image and description */
+    }
+    
+
+    #fot {
+        margin-top: 200px;
+            }
+        
+          
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                #map-container {
+                   
+                    height: 200px; /* Adjusted height for smaller screens */
+                }
+                .hj{
+                    text-align: center;
+                    width:80%;
+                    margin-left: 10px;
+                }}
+                  .hj{
+                    text-align: center;
+                    width:80%;
+                    margin-bottom: 170px;}

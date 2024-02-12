@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Image Slider</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+
+  #prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+    z-index: 1;
+  }
+
+  #prev {
+    left: 0;
+  }
+
+  #next {
+    right: 0;
+  }
+
+  /* Hide slider on desktop screens */
+  @media (min-width: 768px) {
+    .slider-container {
+      display: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Image Slider for Mobile -->
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide"><img src="Assets/index/office1.png" alt="Image 1"></div>
+    <div class="slide"><img src="Assets/index/office2.png" alt="Image 2"></div>
+    <div class="slide"><img src="Assets/index/office3.png" alt="Image 3"></div>
+    <div class="slide"><img src="Assets/index/office4.png" alt="Image 4"></div>
+    <div class="slide"><img src="Assets/index/office5.png" alt="Image 5"></div>
+  </div>
+  <button id="prev">&#10094;</button>
+  <button id="next">&#10095;</button>
+</div>
+
+<!-- Bootstrap JS and jQuery (required) -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  const slider = document.querySelector('.slider');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  let slideIndex = 0;
+
+  function showSlides() {
+    slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+    if (slideIndex >= slider.children.length - 1) {
+      slideIndex = 0;
+    } else {
+      slideIndex++;
+    }
+    showSlides();
+  }
+
+  function prevSlide() {
+    if (slideIndex <= 0) {
+      slideIndex = slider.children.length - 1;
+    } else {
+      slideIndex--;
+    }
+    showSlides();
+  }
+
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', prevSlide);
+
+  setInterval(nextSlide, 5000); // Auto slide every 5 seconds
+</script>
+
+</body>
+</html>
